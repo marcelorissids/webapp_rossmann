@@ -11,7 +11,7 @@ class Rossmann(object):
         self.competition_time_month_scaler = pickle.load(open(self.home_path + 'parameter/competition_time_month_scaler.pkl', 'rb'))
         self.competition_distance_scaler   = pickle.load(open(self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb'))
         self.store_type_scaler             = pickle.load(open(self.home_path + 'parameter/store_type_scaler.pkl', 'rb'))
-        self.promo_time_week               = pickle.load(open(self.home_path + 'parameter/promo_time_week.pkl', 'rb'))
+        self.promo_time_week               = pickle.load(open(self.home_path + 'parameter/promo_time_week_scaler.pkl', 'rb'))
         self.year_scaler                   = pickle.load(open(self.home_path + 'parameter/year_scaler.pkl', 'rb'))
 
     def data_cleaning(self, df1):
